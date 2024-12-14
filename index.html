@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./dist/style.css" />
+		<script defer src="./index.js"></script>
+		<title>Frontend Mentor | SPLITTER APP</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Spli<br />tter</h1>
+			<main class="main-content">
+				<section class="input-section">
+					<div class="labels">
+						<label for="bill">Bill</label>
+						<p class="error-message" id="error-bill">Can't be negative</p>
+					</div>
+					<input type="number" class="bill-input" id="bill" placeholder="0" min="0" />
+					<label>Select Tip %</label>
+					<div class="tip-buttons">
+						<button data-tip="5">5%</button>
+						<button data-tip="10">10%</button>
+						<button data-tip="15">15%</button>
+						<button data-tip="25">25%</button>
+						<button data-tip="50">50%</button>
+						<input type="number" class="custom-tip-input" id="custom-tip" placeholder="Custom" min="0" />
+					</div>
+					<div class="labels">
+						<label for="people">Number of People</label>
+						<p class="error-message" id="error-people">Can't be zero</p>
+					</div>
+					<input type="number" class="people-input" id="people" value="1" placeholder="1" min="1" />
+				</section>
+				<section class="output-section">
+					<div class="outputs output-tip">
+						<p>Tip Amount <span>/ person</span></p>
+						<h2 id="tip-amount">$0.00</h2>
+					</div>
+					<div class="outputs output-total">
+						<p>Total <span>/ person</span></p>
+						<h2 id="total-amount">$0.00</h2>
+					</div>
+					<button class="reset-button" id="reset">RESET</button>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
